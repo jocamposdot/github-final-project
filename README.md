@@ -15,3 +15,5 @@ The script accepts:
 jocamposdot
 
 
+
+Bug fix note.
