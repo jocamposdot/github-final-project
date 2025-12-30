@@ -1,0 +1,23 @@
+﻿COMMANDS:
+git checkout -b bug-fix-typo
+... edit README.md (typo fix)
+git add README.md
+git commit -m "Fix typo"
+git checkout main
+git merge bug-fix-typo
+
+OUTPUT:
+Switched to a new branch 'bug-fix-typo'
+(edit) git diff --stat:
+ README.md | 2 ++
+ 1 file changed, 2 insertions(+)
+warning: in the working copy of 'README.md', LF will be replaced by CRLF the next time Git touches it
+[bug-fix-typo db5f078] Fix typo
+ 1 file changed, 2 insertions(+)
+Your branch is ahead of 'origin/main' by 2 commits.
+  (use "git push" to publish your local commits)
+Switched to branch 'main'
+Updating 971a68c..db5f078
+Fast-forward
+ README.md | 2 ++
+ 1 file changed, 2 insertions(+)
