@@ -1,0 +1,19 @@
+﻿COMMANDS:
+git checkout -b bug-fix-revert
+(edit) README.md
+git add README.md
+git commit -m "Bug fix: adjust README"
+git revert HEAD --no-edit
+
+OUTPUT:
+Switched to a new branch 'bug-fix-revert'
+(edit) git diff --stat:
+warning: in the working copy of 'README.md', LF will be replaced by CRLF the next time Git touches it
+ README.md | 2 ++
+ 1 file changed, 2 insertions(+)
+warning: in the working copy of 'README.md', LF will be replaced by CRLF the next time Git touches it
+[bug-fix-revert d7bbab8] Bug fix: adjust README
+ 1 file changed, 2 insertions(+)
+[bug-fix-revert 641c064] Revert "Bug fix: adjust README"
+ Date: Tue Dec 30 13:31:01 2025 -0300
+ 1 file changed, 2 deletions(-)
